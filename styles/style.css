@@ -1,0 +1,132 @@
+body {
+  margin: 0px;
+}
+
+.title {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  text-align: center;
+  vertical align: middle;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  /* THIS CHANGES BACHGROUND IN TITLE */
+  /* NOTICE IT HAS A TRANSPARENCY, CHANGE THE FOURTH NUMBER TO 1 TO MAKE IT SOLID */
+  background-color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.3em;
+  line-height: 60px;
+  text-decoration: none;
+  /* If you dont want it uppercase change this */
+  text-transform: uppercase;
+  /* THIS CHANGES THE COLOR OF THE TITLE ONLY, GO TO .drawer-hamburger-icon TO CHANGE THE COLOR OF THAT ICON */
+  color:rgb(255, 255, 255);
+}
+
+/* Currently unused, could be used if you want clicking title to send to home page */
+.title a {
+  line-height: 60px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Changes padding of the images, could be used for more */
+.floatleft {
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.floatright {
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Other, container contains the div with the content, content has.. content */
+.container {
+/* if you want a container, delete or comment out height and width */
+  height: 0px;
+  width: 100%
+  padding: 0px 0px;
+  background-color: rgb(240, 240, 240);
+}
+
+.content {
+  padding: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+}
+
+.content img {
+  margin-left: 0px;
+
+}
+
+/* This changes your section headers */
+.content h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+/* I don't think you should change this */
+.center {
+  margin: 0 auto;
+  display: table;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* changes style of drawer menu item */
+
+/* To change color of the background color of the nav drawer, change background */
+/* color of .drawer-menu-item AND .drawer-nav */
+.drawer-menu-item {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: rgb(40, 40, 40);
+  transition: .3s;
+}
+
+/*This changes the color when a mouse hovers over a drawer-menu-item */
+.drawer-menu-item:hover {
+  background-color: rgb(230, 230, 230);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.drawer-nav {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Chance the background color to chance nav bar icon color */
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+/* Do not change the color from transparent */
+.drawer-open .drawer-hamburger-icon {
+  background-color: transparent !important;
+}
+
+.download a,
+.download a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid transparent;
+  transition: .3s;
+}
+
+.download a:hover {
+  border-bottom: 1px solid rgb(37, 37, 37);
